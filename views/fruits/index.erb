@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt #2</title>
+    <link rel="stylesheet" type="text/css" href="/style.css?<%=Time.now.to_i%>">
+</head>
+<body>
+
+  <header>
+    <h1>Contact</h1>
+    <div id="filter_bar">
+      <a class="new_button" href="/fruits/new">Ny frukt</a>
+    </div>
+  </header>
+
+<ul class=nigger>
+  <% @fruits.each do |fruit| %>
+    <li class="contact_name">
+      <a href="/fruits/<%= fruit['id'] %>"><%= fruit['name'] %></a>
+      <div class="buttons">
+      <form action="/fruits/<%=fruit["id"]%>/delete" method="post" style="display:inline;">
+        <input type="submit" class="delete_button" value="Ta bort">
+      </form>
+      <a href="/fruits/<%= fruit['id']%>/edit">
+        Ändra
+      </a>
+      </div>
+    </li>
+  <% end %>
+</ul>
+
+<h1>Logga in</h1>
+
+<form action="/login" method="POST">
+  <label>Username:
+    <input type="text" value="ola" name="username" id="username" required></label>
+
+  <label for="password">Password:
+    <input type="password" value="123" name="password" id="password" required></label>
+
+  <button type="submit">Login</button>
+</form>
+
+</body>
+</html>

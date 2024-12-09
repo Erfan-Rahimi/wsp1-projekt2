@@ -1,0 +1,27 @@
+<h1>Ändra frukt</h1>
+
+<div class ="edits">
+<form action="/fruits/<%= @fruit['id'] %>/update" method="post">
+
+  <div class="edit">
+  <label for="name">Frukt Namn:</label>
+  <input type="text" id="name" name="fruit_name" value="<%= @fruit['name'] %>">
+  </div>
+
+  <div class="edit">
+  <label for="description">Beskrivning:</label>
+  <input type="text" id="description" name="fruit_description" value="<%= @fruit['description'] %>">
+  </div>
+
+  <div class="edit">
+  <label for="tastiness">Smaklighetsgrad:</label>
+  <input type="number" id="tastiness" name="fruit_tastiness" value="<%= @fruit['tastiness'] %>">
+  </div>
+
+  
+  
+  <div class="edit">
+  <input type="submit" value="Spara ändringar">
+  </div>
+</form>
+</div> 

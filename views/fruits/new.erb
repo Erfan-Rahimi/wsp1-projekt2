@@ -1,0 +1,8 @@
+<link rel="stylesheet" type="text/css" href="/style.css?<%=Time.now.to_i%>">
+
+<form class="create_form" action="/fruits" method="post">
+   <label>Frukt <input type="text" name="fruit_name"></label>
+   <label>Beskrivning <input type="text" name="fruit_description"></label>
+      <label> Tastiness <input type="text" name="fruit_tastiness"></label>
+   <input type="submit" value="Spara">
+</form>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt #2</title>
+    <link rel="stylesheet" type="text/css" href="/style.css?<%=Time.now.to_i%>">
+    <link rel="stylesheet" type="text/css" href="/edit.css?<%=Time.now.to_i%>">
+</head>
+<body>
+
+    <div class="container">
+        <div class="entryarea">
+            
+            <div class ="edits">
+                <form action="/fruits/<%= @fruit['id'] %>/update" method="post">
+
+                    <div class="edit">
+                    <input type="text" id="name" name="fruit_name" value="<%= @fruit['name'] %>">
+                    <div class="labelline">Enter name</div>
+                    </div>
+
+                    <div class="edit">
+                    <input type="text" id="description" name="fruit_description" value="<%= @fruit['description'] %>">
+                    <div class="labelline">Enter number</div>
+                    </div>
+                                
+                    <div class="edit">
+                    <input type="number" id="tastiness" name="fruit_tastiness" value="<%= @fruit['tastiness'] %>">
+                    <div class="labelline">Enter relation</div>
+                    </div>
+
+                    <div class="edit">
+                    <input type="submit" value="Spara ändringar">
+                    </div>
+                
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+

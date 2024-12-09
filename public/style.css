@@ -1,69 +1,113 @@
 body {
   font-family: sans-serif;
-  color: #666;
-  background-color: #F1F1F1;
+  color: #f1f1f1;
+  background-color: #1B1212;
   font-size: x-large;
-  margin: 1em;
-}
-
-strong {
-  color: black;
-}
-
-a {
-  color: #008080;
-}
-
-form {
-  display: inline-block;
-}
-
-img {
-  max-width: 100%;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 0.5em;
-}
-
-nav ul li a {
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
+  height: 100vh;
+  margin: 0; 
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
 }
 
 header {
+  align-items: center;
+  position: relative;
   display: flex;
-  margin-bottom: 1em;
-  align-items: flex-end;
-  gap: 1em;
+  justify-content: space-between;
 }
 
-.logo {
-  font-weight: 100;
-  text-transform: capitalize;
-  font-family: cursive;
-  color: coral;
-  margin: 0;
+.nigger {
+  padding: 0; 
+  margin: 0; 
 }
 
-.logo a {
+.contact_name {
+  margin: 10px 0;
+  background-color: #292020a0;
+  padding: 10px;
+  border-radius: 20px;
+  height: auto; 
+  max-height: calc(100vh - some_fixed_element_heights); 
+  overflow-y: auto; 
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.contact_name a {
+  display: block; 
+  color: #f1f1f1;
   text-decoration: none;
 }
 
-blockquote {
-  background-color: salmon;
-  color: black;
-  padding: 2em;
-  margin: 0;
-  font-family: 'Courier New', Courier, monospace;
+
+.bar{
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+}
+
+#filter_bar{
+  cursor: pointer;
+}
+
+.details {
+  background-color: #292020a0; 
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px; 
+  color: #f1f1f1;
+}
+
+.create_form{
+  align-items: center;
+  display: flex;
+}
+
+.new_button{
+  color: #f1f1f1;
+  text-decoration: none;
+  padding-right: 20px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: right;
+  width: 20%;
+  padding-left: 800px;
+}
+
+.delete_button {
+  background: none; 
+  border: none; 
+  padding: 0; 
+  margin: 0; 
+  color: inherit; 
+  font: inherit; 
+  cursor: pointer; 
+  text-decoration: none; 
+  padding-right: 20px;
+}
+
+#pic1{
+  border-radius: 100%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+.container2{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.container2 ul li{
+  list-style: none;
+  padding-top: 20px;
+  font-size: 1.6em;
+  color: hsl(180, 100%, 97%);
 }

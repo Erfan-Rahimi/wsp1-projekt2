@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt #2</title>
+    <link rel="stylesheet" type="text/css" href="/style.css?<%=Time.now.to_i%>">
+</head>
+<body>
+    
+<header>
+    <h1>Contact</h1>
+    <div id="filter_bar">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    </div>
+</header>
+
+<div class="container2">
+    <ul class="contact_information" >
+        <li>Name: <%= @fruit['name'] %></li>
+        <li>Number: <%= @fruit['description'] %></li>
+        <li>Relation: <%= @fruit['tastiness'] %></li>
+    </ul>
+</div>
+
+
+
+</body>
+</html>
